@@ -1,0 +1,77 @@
+<meta property="twitter:site" content="@lonelyplanet" />
+
+{{#if site.twitterCardType}}{{#unless twitterCardType}}
+<meta property="twitter:card" content="{{twitterCardType}}" />
+{{/unless}}{{/if}}
+{{#if twitterCardType}}<meta property="twitter:card" content="{{twitterCardType}}" />{{/if}}
+
+
+{{!-- defines a summary card, as per https://dev.twitter.com/docs/cards/types/summary-card --}}
+
+{{#if site.twitterTitle}}{{#unless twitterTitle}}
+<meta property="twitter:title" content="{{twitterTitle}}" />
+{{/unless}}{{/if}}
+{{#if twitterTitle}}<meta property="twitter:title" content="{{twitterTitle}}" />{{/if}}
+{{#if site.twitterDescription}}{{#unless twitterDescription}}
+<meta property="twitter:description" content="{{twitterDescription}}" />
+{{/unless}}{{/if}}
+{{#if twitterDescription}}<meta property="twitter:description" content="{{twitterDescription}}" />{{/if}}
+{{#if site.twitterImage}}{{#unless twitterImage}}
+<meta property="twitter:image" content="{{twitterImage}}" />
+{{/unless}}{{/if}}
+{{#if twitterImage}}<meta property="twitter:image" content="{{twitterImage}}" />{{/if}}
+{{#if site.twitterUrl}}{{#unless twitterUr}}
+<meta property="twitter:url" content="{{twitterUr}}" />
+{{/unless}}{{/if}}
+{{#if twitterUr}}<meta property="twitter:url" content="{{twitterUr}}" />{{/if}}
+
+
+{{!--  defines an App Store Card, as per https://dev.twitter.com/docs/cards/types/app-card --}}
+
+{{#if site.twitterAppCountry}}{{#unless twitterAppCountry}}
+<meta name="twitter:app:country" content="{{twitterAppCountry}}" />
+{{/unless}}{{/if}}
+{{#if twitterAppCountry}}<meta name="twitter:app:country" content="{{twitterAppCountry}}" />{{/if}}
+
+
+{{!-- Apple App Store: iPhone — as per https://dev.twitter.com/docs/cards/types/app-card --}}
+{{#if site.twitterAppNameIphone}}{{#unless twitterAppNameIphone}}
+<meta name="twitter:app:name:iphone" content="{{twitterAppNameIphone}}" />
+{{/unless}}{{/if}}
+{{#if twitterAppNameIphone}}<meta name="twitter:app:name:iphone" content="{{twitterAppNameIphone}}" />{{/if}}
+{{#if site.twitterAppIdIphone}}{{#unless twitterAppIdIphone}}
+<meta property="twitter:app:if:iphone" content="{{twitterAppIdIphone}}" />
+{{/unless}}{{/if}}
+{{#if twitterAppIdIphone}}<meta property="twitter:app:if:iphone" content="{{twitterAppIdIphone}}" />{{/if}}
+{{#if site.twitterAppUrlIphone}}{{#unless twitterAppUrlIphone}}
+<meta property="twitter:app:url:iphone" content="{{twitterAppUrlIphone}}" />
+{{/unless}}{{/if}}
+{{#if twitterAppUrlIphone}}<meta property="twitter:app:url:iphone" content="{{twitterAppUrlIphone}}" />{{/if}}
+
+{{!-- Apple App Store: iPad — as per https://dev.twitter.com/docs/cards/types/app-card --}}
+{{#if site.twitterAppNameIpad}}{{#unless twitterAppNameIpad}}
+<meta property="twitter:app:name:ipad" content="{{twitterAppNameIpad}}" />
+{{/unless}}{{/if}}
+{{#if twitterAppNameIpad}}<meta property="twitter:app:name:ipad" content="{{twitterAppNameIpad}}" />{{/if}}
+{{#if site.twitterAppIdIpad}}{{#unless twitterAppIdIpad}}
+<meta property="twitter:app:id:ipad" content="{{twitterAppIdIpad}}" />
+{{/unless}}{{/if}}
+{{#if twitterAppIdIpad}}<meta property="twitter:app:id:ipad" content="{{twitterAppIdIpad}}" />{{/if}}
+{{#if site.twitterAppUrlIpad}}{{#unless twitterAppUrlIpad}}
+<meta property="twitter:app:url:ipad" content="{{twitterAppUrlIpad}}" />
+{{/unless}}{{/if}}
+{{#if twitterAppUrlIpad}}<meta property="twitter:app:url:ipad" content="{{twitterAppUrlIpad}}" />{{/if}}
+
+{{!-- Google Play Store — as per https://dev.twitter.com/docs/cards/types/app-card --}}
+{{#if site.twitterAppNameGoogleplay}}{{#unless twitterAppNameGoogleplay}}
+<meta property="twitter:app:name:googleplay" content="{{twitterAppNameGoogleplay}}" />
+{{/unless}}{{/if}}
+{{#if twitterAppNameGoogleplay}}<meta property="twitter:app:name:googleplay" content="{{twitterAppNameGoogleplay}}" />{{/if}}
+{{#if site.twitterAppIdGoogleplay}}{{#unless twitterAppIdGoogleplay}}
+<meta property="twitter:app:id:googleplay" content="{{twitterAppIdGoogleplay}}" />
+{{/unless}}{{/if}}
+{{#if twitterAppIdGoogleplay}}<meta property="twitter:app:id:googleplay" content="{{twitterAppIdGoogleplay}}" />{{/if}}
+{{#if site.twitterAppUrlGoogleplay}}{{#unless twitterAppUrlGoogleplay}}
+<meta property="twitter:app:url:googleplay" content="{{twitterAppUrlgoogleplay}}" />
+{{/unless}}{{/if}}
+{{#if twitterAppUrlGoogleplay}}<meta property="twitter:app:url:googleplay" content="{{twitterAppUrlGoogleplay}}" />{{/if}}

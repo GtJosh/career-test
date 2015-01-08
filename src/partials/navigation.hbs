@@ -1,0 +1,44 @@
+
+<div class="row row--secondary" id="js-secondary-nav">
+  <div class="row__inner row__inner--secondary row__inner--full-width">
+    <div class="split--left row__title--secondary">
+      <div class="icon--thumbs-up--before place-title">
+        <span class="place-title-heading">Careers</span>
+      </div>
+    </div>
+
+    <div class="nav--secondary__container">
+      <div class="nav--secondary nav__tabs wv--hidden-block">
+        <div class="grid-wrapper--0">
+          <div class="col--one-half">
+            <div class="nav--secondary__col nav--secondary__title copy--h4">
+            </div>
+          </div>
+          <div class="col--one-half">
+            <a class="nav--secondary__other-toggle nav--secondary__col js-toggle-active" data-toggle-me="true" data-toggle-target=".js-secondary-nav-other-menu" style="cursor: pointer;">
+              Submenu
+              <span class="nav--secondary__other-toggle--icon icon--chevron-down icon--body-grey"></span>
+              <span class= "nav--secondary__other-toggle--icon icon--chevron-up icon--body-grey"> </span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <nav class="wv--split--right wv--block nav--secondary js-secondary-nav-other-menu" itemscope='itemscope' itemtype='http://schema.org/SiteNavigationElement' role='navigation'>
+        <h6 class="accessibility">Category Navigation</h6>
+        <div class="split--right__inner wv--nav--inline">
+          <a data-bind="css: { 'is-current': activeTemplate().indexOf('job') > -1}"class="js-nav-item nav__item nav__item--secondary" href= "#openings-list">
+            <div class="wv--hidden--before">
+              Openings
+            </div>
+          </a>
+          <a data-bind="css: { 'is-current': activeTemplate() === 'become_a_contributor'}" class="js-nav-item nav__item nav__item--secondary win-a-trip {{#is page.slug "competition"}} is-current{{/is}}" href="#become-a-contributor">
+            <div class="wv--hidden--before">
+              Become a contributor
+            </div>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--[if IE 7]><html class='no-js ie7 no-freight base' lang='en'><![endif]-->
+<!--[if IE 8]><html class='no-js ie8 no-freight base' lang='en'><![endif]-->
+<!--[if IE 9]><html class='no-js ie9 no-freight base' lang='en'><![endif]-->
+<!--[if gt IE 9]><!--><html class='no-js no-freight base' lang='en'><!--<![endif]-->
+<head>
+  <script type="text/javascript">
+    var require = {};
+  </script>
+  <title>{{title}}{{#if site.title}} - {{site.title}}{{/if}}</title>
+  {{> social}}
+  {{> rizzo-head }}
+  <!--[if (gt IE 8) | (IEMobile)]><!-->
+  <link href="{{rooturl}}/css/main.min.css" rel="stylesheet" />
+  <!--<![endif]-->
+  <!--[if (lt IE 9) & (!IEMobile)]>
+  <link href="{{rooturl}}/css/main_ie.min.css" rel="stylesheet" />
+  <![endif]-->
+
+</head>
+<body class="responsive">
+  {{> rizzo-pre-header }}
+  <div class="wrapper js-wrapper">
+    {{> rizzo-post-header }}
+
+
+    <div class="row row--content" id="js-row--content">
+      {{> body }}
+    </div>
+
+    {{> rizzo-footer }}
+  </div>
+
+  <div class="lightbox lightbox--page-hopper" id="js-lightbox">
+    <div class="lightbox__wrapper js-lightbox-wrapper">
+      <div class="lightbox__controls">
+        <a class="js-lightbox-arrow lightbox-arrow arrow--left is-hidden js-lightbox-previous icon--chevron-left--after icon--white--after">
+          <div class="lightbox-arrow__text"></div>
+        </a>
+        <a class="js-lightbox-arrow lightbox-arrow arrow--right is-hidden js-lightbox-next icon--chevron-right--before icon--white--before">
+          <div class="lightbox-arrow__text"></div>
+        </a>
+      </div>
+      <div class="lightbox__content">
+        <div class="lightbox__close icon--cross icon--white js-lightbox-close"></div>
+        <div class="js-lightbox-content"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="preloader">
+    <div class="preloader__disc">
+      <div class="preloader__disc--coloured preloader__disc--blue"></div>
+    </div>
+    <div class="preloader__disc">
+      <div class="preloader__disc--coloured preloader__disc--red"></div>
+    </div>
+    <div class="preloader__disc">
+      <div class="preloader__disc--coloured preloader__disc--green"></div>
+    </div>
+    <div class="preloader__disc">
+      <div class="preloader__disc--coloured preloader__disc--orange"></div>
+    </div>
+    <div class="preloader__cover"></div>
+  </div>
+
+  <script type="text/javascript" src="{{rooturl}}/js/require.js" data-main="{{rooturl}}/js/app.min"></script>
+
+</body>
+</html>

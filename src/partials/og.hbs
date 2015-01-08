@@ -1,0 +1,16 @@
+{{#if site.ogTitle}}{{#unless ogTitle}}
+<meta property="og:title" content="{{site.ogTitle}}" />
+{{/unless}}{{/if}}
+{{#if site.ogDescription}}{{#unless ogDescription}}
+<meta property="og:description" content="{{site.ogDescription}}" />
+{{/unless}}{{/if}}
+{{#if site.ogImage}}{{#unless ogImage}}
+<meta property="og:image" content="{{site.ogImage}}" />
+{{/unless}}{{/if}}
+{{#if site.ogURL}}{{#unless ogURL}}
+<meta property="og:url" content="{{site.ogURL}}" />
+{{/unless}}{{/if}}
+{{#if ogTitle}}<meta property="og:title" content="{{ogTitle}}" />{{/if}}
+{{#if ogDescription}}<meta property="og:description" content="{{ogDescription}}" />{{/if}}
+{{#if ogImage}}<meta property="og:image" content="{{ogImage}}" />{{/if}}
+{{#if ogURL}}<meta property="og:url" content="{{ogURL}}" />{{/if}}

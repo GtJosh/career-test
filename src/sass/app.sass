@@ -1,0 +1,199 @@
+// ---------------------------------------------------------------------------
+//
+// Rizzo mixins, variables, and utilities
+//
+// ---------------------------------------------------------------------------
+$is-ie: false
+
+@import "base_helpers"
+
+// ---------------------------------------------------------------------------
+//
+// Component stylesheets
+//
+// ---------------------------------------------------------------------------
+@import "globals/*"
+@import "partials/*"
+@import "pages/*"
+
+
+h2
+  margin-top: 1.8em
+  margin-bottom: 0.9em
+  font-size: 1.14286rem
+  color: #1d508d
+  font-weight: bold
+  // text-transform: uppercase
+  letter-spacing: 0.05em
+
+h4
+  font-weight: bold
+  color: $titlegray
+
+.nav--secondary
+  text-align: right
+
+.nav__item--secondary
+  padding-bottom: 5px
+
+address
+  font-style: normal
+
+.input__container
+  margin-bottom: 38px
+
+  h2
+    font-size: 1em
+
+.jobs__copy
+  +respond-to(narrow-view)
+    width: 50%
+  margin: 20px auto 20px auto
+  width: 95%
+  .jobs__copy__content
+    font-size: 1.4em
+    color: $lightgray
+    line-height: 1.45em
+
+.jobs__wrapper
+  opacity: 0
+  transition: opacity .5s ease-in
+
+  &.is-ready
+    opacity: 1
+
+.jobs
+  .rbox-opening-list,.jobs__filters, .contrib-body
+    +respond-to(narrow-view)
+      width: 50%
+    width: 95%
+    margin: 0 auto
+  .rbox-opening-li
+    border-width: 0
+    margin-bottom: 20px
+    a
+      font-size: 1em
+    div
+      font-size: .9em
+  .rbox-opening-detail
+    border-radius: 8px
+    background: white
+    padding: 10%
+  .rbox-top-links, .rbox-bottom-links
+    a
+      opacity: 0
+    &::before
+      content: "< Back to Jobs"
+      text-transform: uppercase
+      color: $lightgray
+      font-size: .8em
+      position: absolute
+      cursor: pointer
+
+  .rbox-job-title
+    letter-spacing: normal
+    font-weight: normal
+  .rbox-job-longdesc
+    border-top: 0px
+  .rbox-application-form
+    width: 100%
+    +respond-to(medium-view)
+      width: 40%
+    border-top: 0
+  .rbox-field-wrapper
+    input, input[type="text"], input[type="email"], input[type="url"],input[type="file"], textarea
+      -webkit-box-sizing: border-box
+      -moz-box-sizing: border-box
+      box-sizing: border-box
+      -webkit-transition: background 0.3s ease
+      transition: background 0.3s ease
+      background-color: #f2f6fa
+      border: 1px solid #f2f6fa
+      color: #3b444f
+      padding: 9px 10px
+      width: 100%
+      -webkit-box-shadow: none
+      box-shadow: none
+      display: block
+  .rbox-widget
+    .rbox-btn
+      font-size: 16px
+      font-size: 1.14286rem
+      -webkit-box-sizing: border-box
+      -moz-box-sizing: border-box
+      box-sizing: border-box
+      background-color: #288ad6 !important
+      background-image: none
+      color: #fff
+      cursor: pointer
+      font-weight: bold
+      line-height: 1em
+      overflow: hidden
+      padding: 10px 25px
+      text-align: center
+      border: none
+      text-shadow: none
+      &:hover
+        color: white
+  .rbox-job-fullpage
+    .rbox-job-longdesc
+      font-size: 1.25em !important
+      line-height: 1.45em
+      h4
+        color: $bodygray
+      ul
+        li
+          list-style: disc !important
+      p, li, div, span
+        background: #fff !important
+        font-family: freight, 'Helvetica Neue', Arial, Helvetica !important
+        color: $bodygray
+        font-size: 1.14286rem !important
+
+    .rbox-job-shortdesc
+      color: $lightgray
+
+.hero__banner
+  background: url(../images/openings.jpg) no-repeat
+  background-size: cover
+  min-height: 500px
+  &.become_a_contributor
+    background-image: url(../images/contribute.jpg)
+  &.work_experience
+    background-image: url(../images/experience.jpg)
+
+.hero__content
+  width: 95%
+  padding-top: 175px
+  color: white
+  margin: 0 auto
+  text-align: center
+  +respond-to(narrow-view)
+    width: 40%
+  h3
+    font-size: 1.25em
+  h1
+    +respond-to(narrow-view)
+      font-size: 4em
+    font-size: 3em
+    font-weight: bold
+    line-height: .86em
+    text-transform: uppercase
+    padding-top: 12px
+  .become_a_contributor &
+    +respond-to(narrow-view)
+      width: 42.5%
+  .work_experience &
+    +respond-to(narrow-view) 
+      width: 37.5%
+    width: 100%
+.dropdown__value
+  background: #fff
+
+label.dropdown__value
+  font-size: .9em
+  padding: 5px 40px 5px 10px
+
+.work_experience
+  ul 
+    padding-left: 17px

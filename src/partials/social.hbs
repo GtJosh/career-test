@@ -1,0 +1,13 @@
+{{!-- template for adding new properties
+
+{{#if site.value}}{{#unless value}}
+<meta property="name" content="{{value}}" />
+{{/unless}}{{/if}}
+{{#if value}}<meta property="name" content="{{value}}" />{{/if}}
+
+--}}
+
+<meta property="description" content="{{description}}" />
+
+{{> og}}
+{{> twitter}}

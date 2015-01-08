@@ -1,0 +1,26 @@
+{
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "assemble": "~0.4.40",
+    "grunt-contrib-sass": "~0.7.3",
+    "grunt-contrib-concat": "~0.4.0",
+    "grunt-contrib-cssmin": "~0.10.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-contrib-connect": "~0.8.0",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-jscs": "~0.6.1",
+    "grunt-wget": "~0.1.2",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-requirejs": "~0.4.4",
+    "grunt-contrib-copy": "*",
+    "grunt-contrib-coffee": "*",
+    "shelljs": "~0.3.0",
+    "grunt-shell": "~1.1.1",
+    "matchdep": "~0.3.0",
+    "grunt-autoprefixer": "~1.0.1",
+    "grunt-yaml": "~0.4.1"
+  }
+}
