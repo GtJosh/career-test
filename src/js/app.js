@@ -1,4 +1,4 @@
-requirejs.config({
+require.config({
   paths: {
   },
   shim: {
@@ -6,7 +6,7 @@ requirejs.config({
 });
 
 require([
-  "app_core",
+  "app_core"
 ], function() {
 
   "use strict";
